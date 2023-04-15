@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<BaseModel>.reactive(
+        onViewModelReady: (model) => model.initSpeech(),
         viewModelBuilder: () => BaseModel(),
         builder: (context, model, child) => drawer(
               context,
@@ -114,41 +115,64 @@ class HomePage extends StatelessWidget {
                   top: sS(context).cH(height: 290),
                   left: sS(context).cW(width: 20),
                 ),
-                AdaptivePositioned(
-                  Column(
-                    children: [
-                      featureContainers(
-                        context,
-                        containerColor: firstSuggestionBoxColor,
-                        titleText: "ChatGPT",
-                        subtitleText:
-                            "A smarter way to stay organised and informed with ChatGPT",
-                        titleFontSize: 25,
-                        subtitleFontSize: 12,
-                      ),
-                      featureContainers(
-                        context,
-                        containerColor: secondSuggestionBoxColor,
-                        titleText: "Dall-El",
-                        subtitleText:
-                            "Get inspired and stay creative with your personal assistant powered by Dall-El",
-                        titleFontSize: 25,
-                        subtitleFontSize: 12,
-                      ),
-                      featureContainers(
-                        context,
-                        containerColor: grey,
-                        titleText: "Smart Voice Assistant",
-                        subtitleText:
-                            "Get the best of both worldss with a voice assistant powered by Dall-El ad ChatGPT ",
-                        titleFontSize: 25,
-                        subtitleFontSize: 12,
-                      ),
-                    ],
-                  ),
-                  top: sS(context).cH(height: 330),
+                Positioned(
+                  top: sS(context).cH(height: 370),
                   left: sS(context).cW(width: 20),
                   right: sS(context).cW(width: 20),
+                  child: SingleChildScrollView(
+                    child: S(
+                      h: sS(context).cH(height: 460),
+                      child: Column(
+                        children: [
+                          featureContainers(
+                            context,
+                            containerColor: firstSuggestionBoxColor,
+                            titleText: "ChatGPT",
+                            subtitleText:
+                                "A smarter way to stay organised and informed with ChatGPT",
+                            titleFontSize: 25,
+                            subtitleFontSize: 12,
+                          ),
+                          featureContainers(
+                            context,
+                            containerColor: secondSuggestionBoxColor,
+                            titleText: "Dall-El",
+                            subtitleText:
+                                "Get inspired and stay creative with your personal assistant powered by Dall-El",
+                            titleFontSize: 25,
+                            subtitleFontSize: 12,
+                          ),
+                          featureContainers(
+                            context,
+                            containerColor: secondSuggestionBoxColor,
+                            titleText: "Dall-El",
+                            subtitleText:
+                                "Get inspired and stay creative with your personal assistant powered by Dall-El",
+                            titleFontSize: 25,
+                            subtitleFontSize: 12,
+                          ),
+                          featureContainers(
+                            context,
+                            containerColor: grey,
+                            titleText: "Smart Voice Assistant",
+                            subtitleText:
+                                "Get the best of both worldss with a voice assistant powered by Dall-El ad ChatGPT ",
+                            titleFontSize: 25,
+                            subtitleFontSize: 12,
+                          ),
+                          featureContainers(
+                            context,
+                            containerColor: grey,
+                            titleText: "Smart Voice Assistant",
+                            subtitleText:
+                                "Get the best of both worldss with a voice assistant powered by Dall-El ad ChatGPT ",
+                            titleFontSize: 25,
+                            subtitleFontSize: 12,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ], allowBackButton: false),
             ));
