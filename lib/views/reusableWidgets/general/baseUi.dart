@@ -20,6 +20,14 @@ Widget baseUi(
               children: children,
             ),
           ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: white,
+            foregroundColor: black,
+
+            // child: const Icon(Icons.keyboard_voice_outlined),
+            child: const Icon(Icons.mic),
+          ),
         ),
       ));
 }

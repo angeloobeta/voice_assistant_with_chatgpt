@@ -16,7 +16,12 @@ Color menuIcon = Color(int.parse("0xffB2D0CE"));
 const textFieldText = Color.fromRGBO(196, 196, 196, 1);
 const black51 = Color.fromRGBO(51, 51, 57, 1);
 const brown = Colors.brown;
-// app color
+const Color mainFontColor = Color.fromRGBO(19, 61, 95, 1);
+const Color firstSuggestionBoxColor = Color.fromRGBO(165, 231, 244, 1);
+const Color secondSuggestionBoxColor = Color.fromRGBO(157, 202, 235, 1);
+const Color thirdSuggestionBoxColor = Color.fromRGBO(0, 0, 0, 1.0);
+const Color assistantCircleColor = Color.fromRGBO(209, 243, 249, 1);
+const Color borderColor = Color.fromRGBO(200, 200, 200, 1);
 
 Color blue = Color(int.parse("0xff58B9EF"));
 Color background = Color(int.parse("0xffC4C4C4"));

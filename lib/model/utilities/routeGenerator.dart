@@ -1,4 +1,5 @@
 import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
+import 'package:voice_assistant_with_chatgpt/views/pages/homePage/home.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -8,7 +9,7 @@ class RouteGenerator {
       case onBoard:
         return MaterialPageRoute(
           settings: settings,
-          builder: (_) => const Main(),
+          builder: (_) => const HomePage(),
         );
 
       default:
