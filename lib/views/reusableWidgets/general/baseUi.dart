@@ -4,6 +4,7 @@ import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImpo
 
 Widget baseUi(
     {required List<Widget> children,
+    required bool isListening,
     required bool allowBackButton,
     required bool allowTextToSpeech,
     required Function() textToSpeechButton,
@@ -38,7 +39,7 @@ Widget baseUi(
                   await textToSpeechButton();
                   developer.log("Button was pressed");
                 },
-                child: const Icon(Icons.mic)),
+                child: Icon(isListening ? Icons.stop : Icons.mic)),
           ),
         ),
       ));

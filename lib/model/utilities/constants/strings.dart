@@ -61,7 +61,6 @@ ScreenSize sS(
     ScreenSize(context: context);
 
 // class instances
-LocalStorage localStorage = LocalStorage();
 
 // package initialization
 // or new Dio with a BaseOptions instance.

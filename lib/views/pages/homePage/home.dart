@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
               context,
               controller: model.advancedDrawerController,
               child: baseUi(
+                  isListening: model.speechToText.isListening,
                   allowBackButton: false,
                   allowTextToSpeech: true,
                   textToSpeechButton: model.onSpeechToTextButton,
@@ -209,3 +210,5 @@ class HomePage extends StatelessWidget {
             ));
   }
 }
+
+// animate_do

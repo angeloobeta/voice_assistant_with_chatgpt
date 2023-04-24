@@ -103,11 +103,6 @@ Widget drawer(context,
                   ),
                 ),
               );
-              // await LocalStorage.setString(appStatus, logoutStatus);
-              // await localStorage.setString(token, ""); // this will remain in the
-              // phone storage for biometric
-              await LocalStorage.setString(savingIdString, "");
-              //await localStorage.setString(baseUrlString, "");
               Navigator.pushNamedAndRemoveUntil(
                   context, "/signIn", (route) => false);
             }),
