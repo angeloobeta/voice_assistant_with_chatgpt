@@ -1,20 +1,22 @@
 import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
 
-class GeneralTextDisplay extends StatelessWidget {
+class GeneralTextDisplayCustom extends StatelessWidget {
   final String inputText;
   final double? textFontSize, letterSpacing;
   final FontWeight textFontWeight;
-  final int noOfTextLine;
+  final int? noOfTextLine;
   final String? textSemanticLabel, fontFamily;
   final Color textColor;
   final TextDecoration? textDecoration;
   final TextAlign? textAlign;
   final Color? decorationColor;
 
-  const GeneralTextDisplay(this.inputText, this.textColor, this.noOfTextLine,
+  const GeneralTextDisplayCustom(this.inputText, this.textColor,
       this.textFontSize, this.textFontWeight, this.textSemanticLabel,
-      {this.textDecoration,
+      {super.key,
+      this.textDecoration,
       this.textAlign,
+      this.noOfTextLine,
       this.decorationColor,
       this.fontFamily,
       this.letterSpacing});

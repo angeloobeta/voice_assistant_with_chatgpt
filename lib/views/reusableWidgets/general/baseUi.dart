@@ -1,3 +1,5 @@
+import 'dart:developer' as developer;
+
 import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
 
 Widget baseUi(
@@ -25,7 +27,7 @@ Widget baseUi(
           floatingActionButton: FloatingActionButton(
             onPressed: () async {
               await textToSpeechButton();
-              print("Record button was pressed");
+              developer.log("Record button was pressed");
             },
             backgroundColor: white,
             foregroundColor: black,
@@ -34,7 +36,7 @@ Widget baseUi(
             child: GestureDetector(
                 onTap: () async {
                   await textToSpeechButton();
-                  print("Button was pressed");
+                  developer.log("Button was pressed");
                 },
                 child: const Icon(Icons.mic)),
           ),

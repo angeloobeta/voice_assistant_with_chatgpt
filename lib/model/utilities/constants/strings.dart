@@ -1,9 +1,10 @@
 // constants of string
 // screen sizing
+import 'package:voice_assistant_with_chatgpt/model/utilities/constants/secretKey.dart';
 import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
 
 // string
-String token = "userToken";
+String token = "Bearer $ChatGptKey";
 String loginStatus = "loginStatus";
 String savingIdString = 'savingsId';
 
