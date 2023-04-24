@@ -3,6 +3,8 @@ import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImpo
 Widget baseUi(
     {required List<Widget> children,
     required bool allowBackButton,
+    required bool allowTextToSpeech,
+    required Function() textToSpeechButton,
     Color? color}) {
   return WillPopScope(
       onWillPop: () async {
@@ -21,12 +23,20 @@ Widget baseUi(
             ),
           ),
           floatingActionButton: FloatingActionButton(
-            onPressed: () {},
+            onPressed: () async {
+              await textToSpeechButton();
+              print("Record button was pressed");
+            },
             backgroundColor: white,
             foregroundColor: black,
 
             // child: const Icon(Icons.keyboard_voice_outlined),
-            child: const Icon(Icons.mic),
+            child: GestureDetector(
+                onTap: () async {
+                  await textToSpeechButton();
+                  print("Button was pressed");
+                },
+                child: const Icon(Icons.mic)),
           ),
         ),
       ));
