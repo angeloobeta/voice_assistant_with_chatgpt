@@ -1,8 +1,4 @@
-import 'package:voice_assistant_with_chatgpt/viewModel/BaseModel.dart';
-import 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/featureWidget.dart';
-import 'package:voice_assistant_with_chatgpt/views/uiElements/generalTextDisplayCustom.dart';
-
-import '../../../model/utilities/imports/generalImport.dart';
+import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

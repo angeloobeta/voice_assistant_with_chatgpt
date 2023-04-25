@@ -1,15 +1,10 @@
 import 'dart:developer' as developer;
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
-import 'package:http_client_helper/http_client_helper.dart';
-import 'package:speech_to_text/speech_recognition_result.dart';
-import 'package:speech_to_text/speech_to_text.dart';
-import 'package:voice_assistant_with_chatgpt/model/service/openAIServices.dart';
+import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
 
 class BaseModel extends ChangeNotifier {
   // create an instance of Flutter TTs
-  // final flutterTts = FlutterTts();
+  final flutterTts = FlutterTts();
   CancellationToken? cancellationToken;
   // open-ai service
   final OpenAIServices openAIServices = OpenAIServices();
@@ -28,12 +23,12 @@ class BaseModel extends ChangeNotifier {
   String lastWords = '';
 
   void initTextToSpeech() async {
-    // await flutterTts.setSharedInstance(true);
+    await flutterTts.setSharedInstance(true);
     notifyListeners();
   }
 
   Future<void> speakAssistant(String content) async {
-    // await flutterTts.speak(content);
+    await flutterTts.speak(content);
   }
 
   void initSpeechToText() async {

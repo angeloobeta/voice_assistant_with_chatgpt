@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:voice_assistant_with_chatgpt/views/pages/homePage/home.dart';
+import 'package:voice_assistant_with_chatgpt/model/utilities/imports/generalImport.dart';
 
 void main() {
   runApp(const MyApp());

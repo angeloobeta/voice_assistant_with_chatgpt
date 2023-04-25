@@ -6,9 +6,8 @@ export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/butto
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/detailBox.dart';
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/dialog.dart';
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/divider.dart';
-export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/divider.dart';
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/drawer.dart';
-export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/drawer.dart';
+export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/featureWidget.dart';
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/loading.dart';
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/textButton.dart';
 export 'package:voice_assistant_with_chatgpt/views/reusableWidgets/general/textFieldCombination.dart';

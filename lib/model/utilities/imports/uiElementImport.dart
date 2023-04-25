@@ -4,6 +4,7 @@ export 'package:voice_assistant_with_chatgpt/views/uiElements/adaptivePositioned
 export 'package:voice_assistant_with_chatgpt/views/uiElements/generalButtonWidget.dart';
 export 'package:voice_assistant_with_chatgpt/views/uiElements/generalIconDisplay.dart';
 export 'package:voice_assistant_with_chatgpt/views/uiElements/generalTextDisplay.dart';
+export 'package:voice_assistant_with_chatgpt/views/uiElements/generalTextDisplayCustom.dart';
 export 'package:voice_assistant_with_chatgpt/views/uiElements/generalTextFieldDisplay.dart';
 export 'package:voice_assistant_with_chatgpt/views/uiElements/screenSizing.dart';
 export 'package:voice_assistant_with_chatgpt/views/uiElements/sizedBox.dart';
